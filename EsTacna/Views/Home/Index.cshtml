@@ -1,8 +1,191 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model EsTacna.ViewModels.EstablecimientoSaludViewModel;
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    ViewData["Title"] = "Index";
 }
+@section scripts {
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script>
+        // Inicializar y añadir el mapa
+        function initMap() {
+            // La localizacion de Tacna
+            const tacna = { lat: -18.014810, lng: -70.249888 };
+            // El mapa centrado en Tacna
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                mapId: '54cee5be7cf638f8',
+                center: tacna,
+            });
+        @foreach (var items in Model.listEst)
+        {
+            @Html.Raw(
+                     // Lost marcadores, posicionados en los establecimientos de Salud
+                     "const" + items.Id + " = new google.maps.Marker({position: {lat:" + items.Latitud.ToString().Replace(',', '.') + ",lng:" + items.Longitud.ToString().Replace(',', '.') + "}, map: map,});")
+        }
+                                        }
+        window.initMap = initMap;
+    </script>
+}
+@section style {
+    <style>
+        #map {
+            width: 100%;
+            height: 100vh;
+            /*  margin:0;
+                                    padding: 0;*/
+        }
+    </style>
+}
+@section scriptsBody {
+    <!-- Script para llamar a la API de Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbRC-cA8A-wCyTJoPe2wLtOk1_9aPzVCA&v=beta&callback=initMap&v=weekly"
+            defer></script>
+}
+<!--ComboBox-->
+@{
+    var selectList = new List<SelectListItem>();
+    selectList.Add(new SelectListItem { Text = "Seleccione EPS", Value = "" });
+    foreach (var item in Model.listEps)
+    {
+        selectList.Add(new SelectListItem { Text = item.Nombre, Value = item.Id.ToString() });
+    }
+}
+<!--Primera Parte-->
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div id="Search" class="h-50 d-flex rounded-bottom" style="background-color:#A8D1E3; ">
+    <div id="Text" class="ms-5 col-md-6 align-self-center">
+        <p class="fs-1 fw-bold d-flex justify-content-evenly" style="color:#287D97">
+            Encuentra hoy, <br /> el establecimiento de salud que necesitas. <br />
+        </p>
+        <p class="fs-5 fw-bold d-flex justify-content-center" style="color:#287D97">ByteBusterTEC te conecta con establecimientos de salud en tu ciudad</p>
+        <!--Barra de búsqueda-->
+        <div id="SearchBar" class="d-flex justify-content-center">
+            <div class="rounded-pill bg-white p-2 col-md-10">
+                @using (Html.BeginForm("Buscar", "EstablecimientoDeSalud", FormMethod.Post))
+                {
+                    <div class="d-flex">
+                        @Html.DropDownList("epsid", selectList, new { @class = "form-control me-2 bg-light rounded-pill", required = "required" })
+                        @Html.TextBox("criterio", null, new { @class = "form-control me-2 bg-light rounded-pill", placeholder = "Ingresa los criterios de búsqueda", aria_label = "Buscar" })
+                        <button type="submit" class="btn btn-login p-2" @*style="background-color:#6AB6D2; padding-inline:50px"*@>Buscar</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <div id="Image" class="col-md-6 me-3">
+        <img src="~/img/HOSPITAL2.png" class="img-fluid" width="10000000px" height="10000000px" align="right" alt="Responsive image">
+    </div>
 </div>
+<br />
+<br />
+<br />
+<br />
+
+<!--Segunda Parte-->
+@if (HttpContextAccessor.HttpContext.Session.GetString("UsuarioId") != null)
+{
+    <div id="Sugerencias" class="container" style="color:#287D97">
+        <h1 class="fw-bold">Sugerencias</h1>
+        @{
+            int bandera = 0;
+        }
+        <br />
+        <br />
+        <br />
+        <div id="slider">
+
+            @*<div class="row">  *@
+            <figure>
+
+
+                <div class="carousel-indicators">
+                    @foreach (var item in Model.RecEst)
+                    {
+                        <button type="button" style="background-color:black" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="@item.Id" class="active" aria-current="true" aria-label="@item.Nombre"></button>
+
+                    }
+                </div>
+
+                @foreach (var item in Model.RecEst)
+                {
+                    @* <div class="card">
+            <img class="card-img-top" src="@item.Imagen" alt="Card image cap">
+            <div class="card-body">
+            <img class="card-img-top" src="@item.Imagen" alt="Card image cap">
+            <h5 class="card-title">@item.Nombre</h5>
+            <hr />
+            <p class="card-text">@item.Descripcion</p>
+            <hr />
+            <p class="card-text">@item.Direccion</p>
+            @using (Html.BeginForm("Detalle", "EstablecimientoDeSalud", FormMethod.Post))
+            {
+            @Html.TextBox("EstId", @item.Id, new { @class = "form-control me-2 bg-light rounded-pill", aria_label = "Buscar", type = "hidden"})
+            <div class="d-flex">
+            <button type="submit" class="btn btn-info">Ver Detalles</button>
+            </div>
+            }
+            </div>
+            </div>*@
+
+                    <div class="carousel-item @(bandera==0 ? "active":"")">
+                        <img src="@item.Imagen" class="d-block" alt="@item.Imagen">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color:#287D97">@item.Nombre</h5>
+                                <hr />
+                                <p class="card-text" style="color:#287D97">@item.Descripcion</p>
+                                <hr />
+                                <p class="card-text" style="color:#287D97">@item.Direccion</p>
+                                @using (Html.BeginForm("Detalle", "EstablecimientoDeSalud", FormMethod.Post))
+                                {
+                                    @Html.TextBox("EstId", @item.Id, new { @class = "form-control me-2 bg-light rounded-pill", aria_label = "Buscar", type = "hidden" })
+                                    <div class="d-flex">
+                                        <button type="submit" class="btn-info">Ver Detalles</button>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    bandera++;
+                }
+            </figure>
+        </div>
+    </div>
+
+}
+<br />
+<br />
+<br />
+<br />
+<div id="Nosotros" class="h-50 d-flex rounded-bottom" style="background-color:#F6F7F8; ">
+    <div id="Image" class="col-md-6 me-3">
+        <img src="~/img/NOSOTROS2.png" class="img-fluid" width="10000000px" height="10000000px" align="left" alt="Responsive image">
+    </div>
+
+    <div id="Text" class="ms-5 col-md-6 align-self-lg-start">
+        <p class="fs-1 fw-bold d-flex justify-content-evenly" style="color:#287D97">
+            Sobre Nosotros
+        <p class="fs-7 fw-bold  d-flex justify-content-center" style="color:#6AB6D2">
+            ByteBusterTEC líderes en desarrollo
+        </p>
+        </p>
+        <br /> <br />
+        <p class="fs-5 fw-bold  d-flex justify-content-center" style="color:#287D97">
+            Somos ByteBusterTEC una empresa desarrolladora de software
+            apasionada por la  <br />  innovación y la tecnología.
+            Nos especializamos en crear soluciones de software
+            a <br /> medida para empresas de todos los tamaños y sectores.
+            Nuestro equipo de expertos<br /> está compuesto
+            por ingenieros de sistemas altamente capacitados y creativos,
+            listos <br />  para enfrentar cualquier desafío que se les presente.
+        </p>
+        <div id="Image" class="" align="right">
+            <img src="~/img/NOSOTROS3.png" class="img-fluid" width="600px" height="600px" style="" alt="Responsive image">
+        </div>
+    </div>
+</div>
+
+<!--Mapa de Google-->
+<div id="map" class="mt-5"></div>
+<footer> </footer>

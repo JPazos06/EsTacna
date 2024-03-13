@@ -1,0 +1,53 @@
+﻿@model EsTacna.Models.Usuario
+@{
+    ViewData["Title"] = "Perfil de Usuario";
+    List<EsTacna.Models.Usuario> usuarios = ViewBag.Usuario;
+}
+<div class=" row justify-content-center">
+    <div class="col-lg-6">
+        <h1 class="text-center fw-bold  mb-4" style="color:#287D97">PERFIL</h1>
+        <form asp-action="Perfil">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" value="@Model.Id" />
+            <div>
+                <center><img class="rounded-circle" src="https://via.placeholder.com/150" alt="Card image cap" height="250px" width="250px"></center>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Nombre" class="control-label" style="color:#287D97"></label>
+                <input asp-for="Nombre" value="@Model.Nombre" class="form-control" readonly />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Apellido" class="control-label" style="color:#287D97"></label>
+                <input asp-for="Apellido" value="@Model.Apellido" class="form-control" readonly />
+                <span asp-validation-for="Apellido" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Email" class="control-label" style="color:#287D97"></label>
+                <input id="emailInput" asp-for="Email" value="@Model.Email" class="form-control" disabled />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Contrasena" class="control-label" style="color:#287D97"></label>
+                <input id="contrasenaInput" asp-for="Contrasena" value="@Model.Contrasena" class="form-control" type="password" disabled />
+                <span asp-validation-for="Contrasena" class="text-danger"></span>
+            </div>
+            <div class="form-group row gap-5 d-flex justify-content-between">
+                <a id="editarButton" class="btn btn-login" href="#" role="button" onclick="habilitarEdicion()">Editar</a>
+                <input id="guardarButton" type="submit" value="Registrar" class="btn-login" disabled />
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function habilitarEdicion() {
+        var emailInput = document.getElementById("emailInput");
+        var contrasenaInput = document.getElementById("contrasenaInput");
+        var guardarButton = document.getElementById("guardarButton");
+
+        emailInput.disabled = false;
+        contrasenaInput.disabled = false;
+        guardarButton.removeAttribute("disabled");
+    }
+</script>

@@ -1,49 +1,98 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - EsTacna</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/EsTacna.styles.css" asp-append-version="true" />
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">EsTacna</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+﻿<@using Microsoft.AspNetCore.Http;
+        @inject IHttpContextAccessor HttpContextAccessor
+@{
+    Layout = null;
+    string controlador = ViewContext.RouteData.Values["controller"].ToString().ToLower();
+}
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - EsTacna - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Página Principal</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+    <link href="~/css/estilos.css" rel="stylesheet" />
+    <link href="~/css/login.css" rel="stylesheet" />
+    <!--HighChart-->
+    <link href="~/lib/bootstrap/dist/css/highcharts.css" rel="stylesheet" />
+    <!--Datatables-->
+    <link href="~/DataTables/datatables.min.css" rel="stylesheet" />
+    <link href="~/DataTables/DataTables-1.12.1/css/dataTables.semanticui.min.css" rel="stylesheet" />
+    <link href="~/DataTables/DataTables-1.12.1/css/dataTables.foundation.min.css" rel="stylesheet" />
+
+    <!--Bootstrap-->
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    <!--JQuery-->
+    <script src="~/lib/jquery/dist/jquery-3.6.1.min.js"></script>
+    <!--HighChart-->
+    <script src="~/lib/jquery/dist/highcharts.js"></script>
+    <script src="~/lib/jquery/dist/highcharts-3d.js"></script>
+    <script src="~/lib/jquery/dist/highcharts-more.js"></script>
+    <script src="~/lib/jquery/dist/exporting.js"></script>
+    <script src="~/lib/jquery/dist/offline-exporting.js"></script>
+    <!--Rating-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="~/css/star-rating.min.css" rel="stylesheet" />
+    <script src="~/js/star-rating.min.js"></script>
+    <link href="~/themes/krajee-fas/theme.min.css" rel="stylesheet" />
+    <script src="~/themes/krajee-fas/theme.min.js"></script>
+
+    @RenderSection("scripts", required: false)
+    @RenderSection("style", required: false)
+</head>
+<body class="" style="background-color:#F6F7F8">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#A8D1E3">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="~/Home/Index" style="color:#6AB6D2">EsTacna</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <a class="nav-link" style="color:#287D97" href="#Nosotros">Sobre Nosotros</a>
+                    <a class="nav-link" style="color:#287D97" href="#map">Ubicacion</a>
+                    <a class="nav-link" style="color:#287D97; margin-inline-end:600px" href="#">Contactanos</a>
+                    @if (HttpContextAccessor.HttpContext.Session.GetString("UsuarioNombre") != null)
+                    {
+                    }
+                    else
+                    {
+                                <a class="nav-link" style="color:#287D97" href="~/Usuario/Registrar">Regístrate</a>
+                    }
+                    @if (@HttpContextAccessor.HttpContext.Session.GetString("UsuarioNombre") != null)
+                    {
+                                <a class="nav-link" style="color:#287D97" href="~/Usuario/Perfil?idUs=@HttpContextAccessor.HttpContext.Session.GetString("UsuarioId")">
+                            @HttpContextAccessor.HttpContext.Session.GetString("UsuarioNombre")
+                                </a>
+                                <a class="nav-link" style="color:#287D97" href="~/Login/Logout" role="button">Cerrar Sesion</a>
+                    }
+                    else
+                    {
+                                <a class="nav-link" style="color:#287D97" href="~/Login/Login">Iniciar Sesion</a>
+                    }
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+    <!--Mapa de Google-->
+    @RenderSection("scriptsBody", required: false)
+
+    <!--DataTables-->
+    <script src="~/DataTables/datatables.min.js"></script>
+    <!--ResponseModel-->
+    <script src="~/lib/jquery/dist/ini.js"></script>
+    <script src="~/lib/jquery/dist/jquery.form.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 </body>
 </html>

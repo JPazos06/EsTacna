@@ -1,0 +1,41 @@
+﻿@model EsTacna.Models.Usuario
+@{
+    ViewData["Title"] = "Login";
+}
+<body style="padding:0; margin:0;">
+    <main class="login-design">
+        <div class="waves">
+            <img src="assets/loginPerson.png" alt="" />
+        </div>
+        <div class="login">
+            <div class="login-data">
+                <img src="assets/Wave.png" alt="" />
+                <h1 style="color:#287D97">Iniciar Sesión</h1>
+                </br>
+                <form method="post" action="#" class="login-form">
+                    <div class="input-group">
+                        <label class="input-fill">
+                            <label asp-for="Email" style="color:#287D97">Ingrese su Correo Electronico</label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                            <span class="input-label"></span>
+                            <i class="fas fa-envelope"></i>
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <label class="input-fill">
+                            <label asp-for="Contrasena" style="color:#287D97">Ingrese su contraseña</label>
+                            <input asp-for="Contrasena" class="form-control" type="password" />
+                            <span asp-validation-for="Contrasena" class="text-danger"></span>
+                            <span class="input-label"></span>
+                            <i class="fas fa-lock"></i>
+                        </label>
+                    </div>
+
+                    <input type="submit" value="Iniciar Sesión" class="btn-login" /> </br>
+                    <a href="#">¿Necesitas una Cuenta?</a>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>

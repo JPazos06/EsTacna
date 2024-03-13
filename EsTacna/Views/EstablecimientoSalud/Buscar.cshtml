@@ -1,0 +1,45 @@
+﻿@model List<EsTacna.ViewModels.EstablecimientoSaludViewModel>;
+@{
+    ViewData["Title"] = "Buscar";
+}
+<div id="Resultados" class="container bg-light align-self-center">
+    <h1 class="align-self-center fw-bold text-center" style="color:#287D97">RESULTADOS</h1>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="@item.estSalud.Imagen" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color:#287D97">@item.estSalud.Nombre</h5>
+                        <h6 class="card-title text-black-50" style="color:#287D97">@item.eps.Nombre</h6>
+                        <hr />
+                        <p class="card-text" style="color:#287D97">@item.estSalud.Descripcion</p>
+                        <hr />
+                        <p class="card-text" style="color:#287D97">@item.estSalud.Direccion</p>
+                        @using (Html.BeginForm("Detalle", "EstablecimientoDeSalud", FormMethod.Post))
+                        {
+                            @Html.TextBox("EstId", item.estSalud.Id, new { @class = "form-control me-2 bg-light rounded-pill", aria_label = "Buscar", type = "hidden" })
+                            <div class="d-flex">
+                                <button type="submit" class="btn btn-login">Ver Detalles</button>
+                            </div>
+                        }
+                        @if (item.Clasificacion == "positivo")
+                        {
+                            <p class=" d-inline-block p-auto text-uppercase fw-bolder" style="color:green">@item.Clasificacion</p>
+                        }
+                        else if (item.Clasificacion == "negativo")
+                        {
+                            <p class=" d-inline-block p-auto text-uppercase fw-bolder" style="color:red">@item.Clasificacion</p>
+                        }
+                        else
+                        {
+                            <p class="d-inline-block p-auto" style="color:gray">@item.Clasificacion</p>
+                        }
+                    </div>
+                </div>
+            </div>
+            <br />
+        }
+    </div>
+</div>
