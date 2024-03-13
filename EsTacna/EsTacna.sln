@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EsTacna", "EsTacna.csproj", "{55208A6E-4B76-484D-9E58-62D5BA19C618}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EsTacnaTest", "..\EsTacnaTest\EsTacnaTest.csproj", "{04361A67-2EF7-4F33-B0B6-EC853CDD4B9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55208A6E-4B76-484D-9E58-62D5BA19C618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55208A6E-4B76-484D-9E58-62D5BA19C618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55208A6E-4B76-484D-9E58-62D5BA19C618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55208A6E-4B76-484D-9E58-62D5BA19C618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04361A67-2EF7-4F33-B0B6-EC853CDD4B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04361A67-2EF7-4F33-B0B6-EC853CDD4B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04361A67-2EF7-4F33-B0B6-EC853CDD4B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04361A67-2EF7-4F33-B0B6-EC853CDD4B9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99B210CA-171D-424B-AC77-3AF01F21B5B0}
+	EndGlobalSection
+EndGlobal

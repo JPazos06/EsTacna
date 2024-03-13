@@ -1,0 +1,605 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EsTacna.bundle.scp.css",
+      "PackagePath": "staticwebassets\\EsTacna.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap.css",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap.min.css",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap4.css",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap4.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap5.css",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap5.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap5.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\css\\dataTables.bulma.css",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\css\\dataTables.bulma.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\css\\dataTables.bulma.min.css",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\css\\dataTables.bulma.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\css\\dataTables.dataTables.css",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\css\\dataTables.dataTables.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\css\\dataTables.dataTables.min.css",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\css\\dataTables.dataTables.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\css\\dataTables.foundation.css",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\css\\dataTables.foundation.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\css\\dataTables.foundation.min.css",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\css\\dataTables.foundation.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\css\\dataTables.jqueryui.css",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\css\\dataTables.jqueryui.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\css\\dataTables.jqueryui.min.css",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\css\\dataTables.jqueryui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\css\\dataTables.semanticui.css",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\css\\dataTables.semanticui.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\css\\dataTables.semanticui.min.css",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\css\\dataTables.semanticui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\css\\jquery.dataTables.css",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\css\\jquery.dataTables.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\css\\jquery.dataTables.min.css",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\css\\jquery.dataTables.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\images\\sort_asc.png",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\images\\sort_asc.png"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\images\\sort_asc_disabled.png",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\images\\sort_asc_disabled.png"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\images\\sort_both.png",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\images\\sort_both.png"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\images\\sort_desc.png",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\images\\sort_desc.png"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\images\\sort_desc_disabled.png",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\images\\sort_desc_disabled.png"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap.js",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap.min.js",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap4.js",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap4.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap5.js",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap5.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap5.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\js\\dataTables.bulma.js",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\js\\dataTables.bulma.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\js\\dataTables.bulma.min.js",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\js\\dataTables.bulma.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\js\\dataTables.dataTables.js",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\js\\dataTables.dataTables.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\js\\dataTables.dataTables.min.js",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\js\\dataTables.dataTables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\js\\dataTables.foundation.js",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\js\\dataTables.foundation.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\js\\dataTables.foundation.min.js",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\js\\dataTables.foundation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\js\\dataTables.jqueryui.js",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\js\\dataTables.jqueryui.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\js\\dataTables.jqueryui.min.js",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\js\\dataTables.jqueryui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\js\\dataTables.semanticui.js",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\js\\dataTables.semanticui.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\js\\dataTables.semanticui.min.js",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\js\\dataTables.semanticui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\js\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\js\\jquery.dataTables.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\DataTables-1.12.1\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\DataTables\\DataTables-1.12.1\\js\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\datatables.css",
+      "PackagePath": "staticwebassets\\DataTables\\datatables.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\datatables.js",
+      "PackagePath": "staticwebassets\\DataTables\\datatables.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\datatables.min.css",
+      "PackagePath": "staticwebassets\\DataTables\\datatables.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\DataTables\\datatables.min.js",
+      "PackagePath": "staticwebassets\\DataTables\\datatables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\css\\estilos.css",
+      "PackagePath": "staticwebassets\\css\\estilos.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\css\\star-rating.min.css",
+      "PackagePath": "staticwebassets\\css\\star-rating.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\img\\Clinica.png",
+      "PackagePath": "staticwebassets\\img\\Clinica.png"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\img\\Clinica2.png",
+      "PackagePath": "staticwebassets\\img\\Clinica2.png"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\img\\HOSPITAL.png",
+      "PackagePath": "staticwebassets\\img\\HOSPITAL.png"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\img\\HOSPITAL2.png",
+      "PackagePath": "staticwebassets\\img\\HOSPITAL2.png"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\img\\NOSOTROS.png",
+      "PackagePath": "staticwebassets\\img\\NOSOTROS.png"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\img\\NOSOTROS2.png",
+      "PackagePath": "staticwebassets\\img\\NOSOTROS2.png"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\img\\NOSOTROS3.png",
+      "PackagePath": "staticwebassets\\img\\NOSOTROS3.png"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\img\\Wave.png",
+      "PackagePath": "staticwebassets\\img\\Wave.png"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\js\\locales\\es.js",
+      "PackagePath": "staticwebassets\\js\\locales\\es.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\js\\star-rating.min.js",
+      "PackagePath": "staticwebassets\\js\\star-rating.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\css\\highcharts.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\highcharts.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery\\dist\\exporting.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\exporting.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery\\dist\\highcharts-3d.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\highcharts-3d.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery\\dist\\highcharts-more.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\highcharts-more.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery\\dist\\highcharts.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\highcharts.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery\\dist\\ini.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\ini.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery\\dist\\jquery-3.6.1.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-3.6.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery\\dist\\jquery.form.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.form.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\lib\\jquery\\dist\\offline-exporting.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\offline-exporting.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\themes\\krajee-fa\\theme.css",
+      "PackagePath": "staticwebassets\\themes\\krajee-fa\\theme.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\themes\\krajee-fa\\theme.js",
+      "PackagePath": "staticwebassets\\themes\\krajee-fa\\theme.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\themes\\krajee-fa\\theme.min.css",
+      "PackagePath": "staticwebassets\\themes\\krajee-fa\\theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\themes\\krajee-fa\\theme.min.js",
+      "PackagePath": "staticwebassets\\themes\\krajee-fa\\theme.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\themes\\krajee-fas\\theme.css",
+      "PackagePath": "staticwebassets\\themes\\krajee-fas\\theme.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\themes\\krajee-fas\\theme.js",
+      "PackagePath": "staticwebassets\\themes\\krajee-fas\\theme.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\themes\\krajee-fas\\theme.min.css",
+      "PackagePath": "staticwebassets\\themes\\krajee-fas\\theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\themes\\krajee-fas\\theme.min.js",
+      "PackagePath": "staticwebassets\\themes\\krajee-fas\\theme.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\themes\\krajee-gly\\theme.js",
+      "PackagePath": "staticwebassets\\themes\\krajee-gly\\theme.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\themes\\krajee-gly\\theme.min.js",
+      "PackagePath": "staticwebassets\\themes\\krajee-gly\\theme.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\themes\\krajee-svg\\theme.css",
+      "PackagePath": "staticwebassets\\themes\\krajee-svg\\theme.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\themes\\krajee-svg\\theme.js",
+      "PackagePath": "staticwebassets\\themes\\krajee-svg\\theme.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\themes\\krajee-svg\\theme.min.css",
+      "PackagePath": "staticwebassets\\themes\\krajee-svg\\theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\themes\\krajee-svg\\theme.min.js",
+      "PackagePath": "staticwebassets\\themes\\krajee-svg\\theme.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\themes\\krajee-uni\\theme.css",
+      "PackagePath": "staticwebassets\\themes\\krajee-uni\\theme.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\themes\\krajee-uni\\theme.js",
+      "PackagePath": "staticwebassets\\themes\\krajee-uni\\theme.js"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\themes\\krajee-uni\\theme.min.css",
+      "PackagePath": "staticwebassets\\themes\\krajee-uni\\theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JPazo\\OneDrive\\Documentos\\GitHub\\EsTacna\\EsTacna\\wwwroot\\themes\\krajee-uni\\theme.min.js",
+      "PackagePath": "staticwebassets\\themes\\krajee-uni\\theme.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EsTacna.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.EsTacna.props",
+      "PackagePath": "build\\EsTacna.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.EsTacna.props",
+      "PackagePath": "buildMultiTargeting\\EsTacna.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.EsTacna.props",
+      "PackagePath": "buildTransitive\\EsTacna.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
