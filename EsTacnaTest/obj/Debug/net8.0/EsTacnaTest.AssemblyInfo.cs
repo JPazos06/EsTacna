@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EsTacnaTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+751dabfe096ab2a8b8055c4968626e317b3dc309")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11fa80839ef3056d4593ff59559e0435cae24cb4")]
 [assembly: System.Reflection.AssemblyProductAttribute("EsTacnaTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EsTacnaTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
