@@ -11,8 +11,8 @@ namespace EsTacna.Repositories
         /// <summary>
         /// Guarda una nueva valoración.
         /// </summary>
-        /// <param name="valoracion">La valoración a guardar.</param>
-        void Guardar(Valoracion valoracion);
+        /// <param name="objValoracion">La valoración a guardar.</param>
+        void Guardar(Valoracion objValoracion);
 
         /// <summary>
         /// Lista todas las valoraciones asociadas a un establecimiento por su ID.
@@ -41,12 +41,12 @@ namespace EsTacna.Repositories
         /// <summary>
         /// Guarda una nueva valoración en la base de datos.
         /// </summary>
-        /// <param name="valoracion">La valoración a guardar.</param>
-        public void Guardar(Valoracion valoracion)
+        /// <param name="objValoracion">La valoración a guardar.</param>
+        public void Guardar(Valoracion objValoracion)
         {
             try
             {
-                _context.Entry(valoracion).State = EntityState.Added;
+                _context.Entry(objValoracion).State = EntityState.Added;
                 _context.SaveChanges();
             }
             catch (Exception ex)
@@ -68,7 +68,7 @@ namespace EsTacna.Repositories
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al listar las valoraciones por establecimiento ID", ex);
+                throw new Exception("Error al listar las valoraciones", ex);
             }
         }
     }

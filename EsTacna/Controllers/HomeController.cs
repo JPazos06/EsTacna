@@ -9,8 +9,8 @@ namespace EsTacna.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly EstablecimientoSaludRepositoryImpl estrepo = new EstablecimientoSaludRepositoryImpl(new EsTacnaContext());
-        private readonly EpsRepositoryImpl eprepo = new EpsRepositoryImpl(new EsTacnaContext());
+        private readonly EstablecimientoSaludRepositoryImpl objEstablecimientoRepo = new EstablecimientoSaludRepositoryImpl(new EsTacnaContext());
+        private readonly EpsRepositoryImpl objEpsRepo = new EpsRepositoryImpl(new EsTacnaContext());
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -18,16 +18,16 @@ namespace EsTacna.Controllers
 
         public IActionResult Index()
         {
-            EstablecimientoSaludViewModel objEstvm = new EstablecimientoSaludViewModel();
-            EstablecimientoResponse objResp = new EstablecimientoResponse();
-            objEstvm.listEst = estrepo.ListarMap();
-            objEstvm.listEps = eprepo.Listar();
+            EstablecimientoSaludViewModel objEstablecimientoVm = new EstablecimientoSaludViewModel();
+            EstablecimientoResponse objEstablecimientoResponse = new EstablecimientoResponse();
+            objEstablecimientoVm.listEstablecimiento = objEstablecimientoRepo.ListarMap();
+            objEstablecimientoVm.listEps = objEpsRepo.Listar();
             if (HttpContext.Session.GetString("UsuarioId") != null)
             {
-                var idUs = HttpContext.Session.GetString("UsuarioId");
-                objEstvm.RecEst = objResp.GetEstablecimiento(Convert.ToInt32(idUs)).Result;
+                var idUsuario = HttpContext.Session.GetString("UsuarioId");
+                objEstablecimientoVm.RecoEstablecimiento = objEstablecimientoResponse.GetEstablecimiento(Convert.ToInt32(idUsuario)).Result;
             }
-            return View(objEstvm);
+            return View(objEstablecimientoVm);
         }
 
         public IActionResult Privacy()

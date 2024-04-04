@@ -6,8 +6,8 @@ namespace EsTacna.Controllers
 {
     public class UsuarioController : Controller
     {
-        private readonly UsuarioRepositoryImpl usrepo = new UsuarioRepositoryImpl(new EsTacnaContext());
-        private readonly UnitOfWork useruni = new UnitOfWork(new EsTacnaContext());
+        private readonly UsuarioRepositoryImpl objUsuarioRepo = new UsuarioRepositoryImpl(new EsTacnaContext());
+        private readonly UnitOfWork objUsuarioUnit = new UnitOfWork(new EsTacnaContext());
         // GET: Usuario/Perfil
         public IActionResult Perfil()
         {
@@ -20,34 +20,34 @@ namespace EsTacna.Controllers
         }
         // POST: Usuario/Registrar
         [HttpPost]
-        public IActionResult Registrar(Usuario objUsu)
+        public IActionResult Registrar(Usuario objUsuario)
         {
             if (ModelState.IsValid)
             {
-                usrepo.Registrar(objUsu);
-                useruni.SaveChanges();
-                return View(objUsu);
+                objUsuarioRepo.Registrar(objUsuario);
+                objUsuarioUnit.SaveChanges();
+                return View(objUsuario);
             }
             else
             {
-                return View(objUsu);
+                return View(objUsuario);
             }
         }
         // GET: Usuario/Perfil?idUs=1
         [HttpGet]
-        public IActionResult Perfil(int idUs)
+        public IActionResult Perfil(int idUsuario)
         {
-            var resultado = usrepo.BuscarId(idUs);
+            var resultado = objUsuarioRepo.BuscarId(idUsuario);
             return View(resultado);
         }
 
         // POST: Usuario/Perfil
         [HttpPost]
-        public IActionResult Perfil(Usuario objUsu)
+        public IActionResult Perfil(Usuario objUsuario)
         {
-            usrepo.Registrar(objUsu);
-            useruni.SaveChanges();
-            return Redirect("~/Usuario/Perfil?idUs=" + objUsu.Id);
+            objUsuarioRepo.Registrar(objUsuario);
+            objUsuarioUnit.SaveChanges();
+            return Redirect("~/Usuario/Perfil?idUs=" + objUsuario.Id);
         }
     }
 }

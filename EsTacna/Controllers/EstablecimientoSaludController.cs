@@ -7,57 +7,54 @@ namespace EsTacna.Controllers
 {
     public class EstablecimientoSaludController : Controller
     {
-        private readonly EstablecimientoSaludRepositoryImpl estrepo = new EstablecimientoSaludRepositoryImpl(new EsTacnaContext());
-        private readonly BusquedaRepositoryImpl busqrepo = new BusquedaRepositoryImpl(new EsTacnaContext());
-        private readonly EpsRepositoryImpl epsrepo = new EpsRepositoryImpl(new EsTacnaContext());
-        private readonly EpsEstablecimientoSaludRepositoryImpl epsestrepo = new EpsEstablecimientoSaludRepositoryImpl(new EsTacnaContext());
-        private readonly ValoracionRepositoryImpl valrepo = new ValoracionRepositoryImpl(new EsTacnaContext());
+        private readonly EstablecimientoSaludRepositoryImpl objEstablecimientoRepo = new EstablecimientoSaludRepositoryImpl(new EsTacnaContext());
+        private readonly BusquedaRepositoryImpl objBusquedaRepo = new BusquedaRepositoryImpl(new EsTacnaContext());
+        private readonly EpsRepositoryImpl objEpsRepo = new EpsRepositoryImpl(new EsTacnaContext());
+        private readonly EpsEstablecimientoSaludRepositoryImpl objEpsEstablecimientoRepo = new EpsEstablecimientoSaludRepositoryImpl(new EsTacnaContext());
+        private readonly ValoracionRepositoryImpl objValoracionRepo = new ValoracionRepositoryImpl(new EsTacnaContext());
         public IActionResult Buscar(string criterio, int epsid)
         {
-            Busquedum objBusc = new Busquedum();
-            List<EstablecimientoSaludViewModel> listEstvm = new List<EstablecimientoSaludViewModel>();
-            var listEst = new List<EstablecimientoSalud>();
-            var listEpsEst = new List<EpsEstablecimientoSalud>();
+            Busquedum objBuscar = new Busquedum();
+            List<EstablecimientoSaludViewModel> listEstablecimientoVm = new List<EstablecimientoSaludViewModel>();
+            var listEstablecimiento = new List<EstablecimientoSalud>();
             if (criterio == "" || criterio == null)
             {
-                listEst = estrepo.Listar(epsid).ToList();
+                listEstablecimiento = objEstablecimientoRepo.Listar(epsid).ToList();
             }
             else
             {
-                listEst = estrepo.Buscar(criterio, epsid).ToList();
+                listEstablecimiento = objEstablecimientoRepo.Buscar(criterio, epsid).ToList();
             }
-            foreach (var item in listEst)
+            foreach (var item in listEstablecimiento)
             {
-                EstablecimientoResponse objEstResp = new EstablecimientoResponse();
-                EstablecimientoSaludViewModel objEstvm = new EstablecimientoSaludViewModel();
-                objEstvm.estSalud = item;
-                objEstvm.eps = epsrepo.BuscarId(epsestrepo.BuscarId(item.Id).EpsId);
-                objEstvm.Clasificacion = objEstResp.ObtenerEstablecimiento(item.Id).Result.clasfreal;
-                listEstvm.Add(objEstvm);
+                EstablecimientoResponse objEstablecimientoResponse = new EstablecimientoResponse();
+                EstablecimientoSaludViewModel objEstablecimientoVm = new EstablecimientoSaludViewModel();
+                objEstablecimientoVm.establecimientoSalud = item;
+                objEstablecimientoVm.eps = objEpsRepo.BuscarId(objEpsEstablecimientoRepo.BuscarId(item.Id).EpsId);
+                objEstablecimientoVm.Clasificacion = objEstablecimientoResponse.ObtenerEstablecimiento(item.Id).Result.clasificacionReal;
+                listEstablecimientoVm.Add(objEstablecimientoVm);
             }
-            objBusc.TerminoBusqueda = epsrepo.BuscarId(epsid).Nombre + " " + criterio;
-            objBusc.UsuarioId = Convert.ToInt32(HttpContext.Session.GetString("UsuarioId") ?? "1");
-            objBusc.Fecha = Convert.ToDateTime(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"));
-            busqrepo.Registrar(objBusc);
-            return View(listEstvm);
+            objBuscar.TerminoBusqueda = objEpsRepo.BuscarId(epsid).Nombre + " " + criterio;
+            objBuscar.UsuarioId = Convert.ToInt32(HttpContext.Session.GetString("UsuarioId") ?? "1");
+            objBuscar.Fecha = Convert.ToDateTime(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"));
+            objBusquedaRepo.Registrar(objBuscar);
+            return View(listEstablecimientoVm);
         }
-        public IActionResult Detalle(int EstId)
+        public IActionResult Detalle(int EstablecimientoId)
         {
-            EstablecimientoSaludViewModel objEstvm = new EstablecimientoSaludViewModel();
-            Valoracion objVal = new Valoracion();
-            var IdEst = estrepo.BuscarId(EstId);
-            objEstvm.estSalud = IdEst;
-            objEstvm.eps = epsestrepo.BuscarIdEps(EstId);
-            objEstvm.listValoracion = valrepo.ListarPorEstablecimientoId(IdEst.Id);
-            objEstvm.TotalValoraciones = (objEstvm.listValoracion.Count() == 0) ? 0 : Convert.ToInt32(objEstvm.listValoracion.Sum(x => x.Calificacion) / objEstvm.listValoracion.Count());
-            return View(objEstvm);
+            EstablecimientoSaludViewModel objEstablecimientoVm = new EstablecimientoSaludViewModel();
+            var idEstablecimiento = objEstablecimientoRepo.BuscarId(EstablecimientoId);
+            objEstablecimientoVm.establecimientoSalud = idEstablecimiento;
+            objEstablecimientoVm.eps = objEpsEstablecimientoRepo.BuscarIdEps(EstablecimientoId);
+            objEstablecimientoVm.listValoracion = objValoracionRepo.ListarPorEstablecimientoId(idEstablecimiento.Id);
+            objEstablecimientoVm.TotalValoraciones = (objEstablecimientoVm.listValoracion.Count() == 0) ? 0 : Convert.ToInt32(objEstablecimientoVm.listValoracion.Sum(x => x.Calificacion) / objEstablecimientoVm.listValoracion.Count());
+            return View(objEstablecimientoVm);
         }
         [HttpPost]
-        public IActionResult Valorar(Valoracion objVal)
+        public IActionResult Valorar(Valoracion objValoracion)
         {
-            //objVal.Guardar();
-            valrepo.Guardar(objVal);
-            return RedirectToAction("Detalle", new { EstId = objVal.EstablecimientoId }); ;
+            objValoracionRepo.Guardar(objValoracion);
+            return RedirectToAction("Detalle", new { idEstablecimiento = objValoracion.EstablecimientoId }); ;
         }
     }
 }

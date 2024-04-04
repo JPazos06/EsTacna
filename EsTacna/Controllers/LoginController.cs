@@ -6,15 +6,15 @@ namespace EsTacna.Controllers
 {
     public class LoginController : Controller
     {
-        private readonly UsuarioRepositoryImpl usrepo = new UsuarioRepositoryImpl(new EsTacnaContext());
+        private readonly UsuarioRepositoryImpl objUsuarioRepo = new UsuarioRepositoryImpl(new EsTacnaContext());
         public IActionResult Index()
         {
             return View();
         }
         [HttpPost]
-        public IActionResult Login(Usuario objU)
+        public IActionResult Login(Usuario objUsuario)
         {
-            Usuario logUsuario = usrepo.Login(objU.Email, objU.Contrasena);
+            Usuario logUsuario = objUsuarioRepo.Login(objUsuario.Email, objUsuario.Contrasena);
 
             if (logUsuario != null)
             {

@@ -11,8 +11,8 @@ namespace EsTacna.Repositories
         /// <summary>
         /// Registra un usuario en la base de datos.
         /// </summary>
-        /// <param name="usuario">Objeto Usuario que se registrará.</param>
-        void Registrar(Usuario usuario);
+        /// <param name="objUsuario">Objeto Usuario que se registrará.</param>
+        void Registrar(Usuario objUsuario);
 
         /// <summary>
         /// Realiza el inicio de sesión de un usuario.
@@ -43,17 +43,17 @@ namespace EsTacna.Repositories
         }
 
         /// <inheritdoc />
-        public void Registrar(Usuario usuario)
+        public void Registrar(Usuario objUsuario)
         {
             try
             {
-                if (usuario.Id > 0)
+                if (objUsuario.Id > 0)
                 {
-                    _dbContext.Entry(usuario).State = EntityState.Modified;
+                    _dbContext.Entry(objUsuario).State = EntityState.Modified;
                 }
                 else
                 {
-                    _dbContext.Entry(usuario).State = EntityState.Added;
+                    _dbContext.Entry(objUsuario).State = EntityState.Added;
                 }
                 _dbContext.SaveChanges();
             }
@@ -66,33 +66,33 @@ namespace EsTacna.Repositories
         /// <inheritdoc />
         public Usuario Login(string usuarioCuenta, string contrasenaCuenta)
         {
-            Usuario usuario = new Usuario();
+            Usuario objUsuario = new Usuario();
             try
             {
                 var usuarioDatos = from datos in _dbContext.Usuarios select datos;
-                usuario = usuarioDatos.Where(u => u.Email == usuarioCuenta && u.Contrasena == contrasenaCuenta).FirstOrDefault();
+                objUsuario = usuarioDatos.Where(u => u.Email == usuarioCuenta && u.Contrasena == contrasenaCuenta).FirstOrDefault();
             }
             catch (Exception ex)
             {
                 throw;
             }
-            return usuario;
+            return objUsuario;
         }
 
         /// <inheritdoc />
         public Usuario BuscarId(int usuarioId)
         {
-            Usuario usuario = new Usuario();
+            Usuario objUsuario = new Usuario();
             try
             {
                 var usuarioDatos = from datos in _dbContext.Usuarios select datos;
-                usuario = usuarioDatos.Where(e => e.Id == usuarioId).FirstOrDefault();
+                objUsuario = usuarioDatos.Where(e => e.Id == usuarioId).FirstOrDefault();
             }
             catch (Exception ex)
             {
                 throw;
             }
-            return usuario;
+            return objUsuario;
         }
     }
 

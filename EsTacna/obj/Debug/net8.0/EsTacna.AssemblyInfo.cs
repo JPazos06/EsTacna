@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EsTacna")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b38032a9eae285782a6f5a67407096251a21152b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da09984747e42d3dee7a5be2efe8627e753b3c96")]
 [assembly: System.Reflection.AssemblyProductAttribute("EsTacna")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EsTacna")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

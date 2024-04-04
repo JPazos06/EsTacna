@@ -9,17 +9,17 @@
         {
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="@item.estSalud.Imagen" alt="Card image cap">
+                    <img class="card-img-top" src="@item.establecimientoSalud.Imagen" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title" style="color:#287D97">@item.estSalud.Nombre</h5>
+                        <h5 class="card-title" style="color:#287D97">@item.establecimientoSalud.Nombre</h5>
                         <h6 class="card-title text-black-50" style="color:#287D97">@item.eps.Nombre</h6>
                         <hr />
-                        <p class="card-text" style="color:#287D97">@item.estSalud.Descripcion</p>
+                        <p class="card-text" style="color:#287D97">@item.establecimientoSalud.Descripcion</p>
                         <hr />
-                        <p class="card-text" style="color:#287D97">@item.estSalud.Direccion</p>
-                        @using (Html.BeginForm("Detalle", "EstablecimientoDeSalud", FormMethod.Post))
+                        <p class="card-text" style="color:#287D97">@item.establecimientoSalud.Direccion</p>
+                        @using (Html.BeginForm("Detalle", "EstablecimientoSalud", FormMethod.Post))
                         {
-                            @Html.TextBox("EstId", item.estSalud.Id, new { @class = "form-control me-2 bg-light rounded-pill", aria_label = "Buscar", type = "hidden" })
+                            @Html.TextBox("EstId", item.establecimientoSalud.Id, new { @class = "form-control me-2 bg-light rounded-pill", aria_label = "Buscar", type = "hidden" })
                             <div class="d-flex">
                                 <button type="submit" class="btn btn-login">Ver Detalles</button>
                             </div>

@@ -11,8 +11,8 @@
         function initMap() {
             // La localizacion de Tacna
             const estS = {
-                lat: @Html.Raw(Model.estSalud.Latitud.ToString().Replace(',', '.')),
-                lng: @Html.Raw(Model.estSalud.Longitud.ToString().Replace(',', '.'))
+                lat: @Html.Raw(Model.establecimientoSalud.Latitud.ToString().Replace(',', '.')),
+                lng: @Html.Raw(Model.establecimientoSalud.Longitud.ToString().Replace(',', '.'))
                             };
             // El mapa centrado en Tacna
             const map = new google.maps.Map(document.getElementById("map"), {
@@ -43,21 +43,21 @@
             defer></script>
 }
 <div class="container bg-light align-self-center">
-    <h1 class="align-self-center fw-bold text-center" style="color:#287D97">@Model.estSalud.Nombre</h1>
+    <h1 class="align-self-center fw-bold text-center" style="color:#287D97">@Model.establecimientoSalud.Nombre</h1>
     <div class="row">
         <div class="col-md-4">
             <div class="card">
                 <div>
                     <input id="input-21e" value="@Model.TotalValoraciones" type="text" class="rating" data-theme="krajee-fas" data-min=0 data-max=5 data-step=0.5 data-size="xs" title="" disabled>
                 </div>
-                <img class="card-img-top" src="@Model.estSalud.Imagen" alt="Card image cap">
+                <img class="card-img-top" src="@Model.establecimientoSalud.Imagen" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title" style="color:#287D97">@Model.estSalud.Nombre</h5>
+                    <h5 class="card-title" style="color:#287D97">@Model.establecimientoSalud.Nombre</h5>
                     <h6 class="card-title text-black-50" style="color:#287D97">@Model.eps.Nombre</h6>
                     <hr />
-                    <p class="card-text" style="color:#287D97">@Model.estSalud.Descripcion</p>
+                    <p class="card-text" style="color:#287D97">@Model.establecimientoSalud.Descripcion</p>
                     <hr />
-                    <p class="card-text" style="color:#287D97">@Model.estSalud.Direccion</p>
+                    <p class="card-text" style="color:#287D97">@Model.establecimientoSalud.Direccion</p>
                 </div>
             </div>
         </div>
@@ -69,12 +69,12 @@
 
     <div id="comments-section" class="container bg-light align-self-center">
         <h5 class="text-black-50 fw-bold" style="color:#287D97">Agrega tu valoración</h5>
-        @using (Html.BeginForm("Valorar", "EstablecimientoDeSalud", FormMethod.Post))
+        @using (Html.BeginForm("Valorar", "EstablecimientoSalud", FormMethod.Post))
         {
-            @Html.TextBox("Valoracion1", null, new { @class = "rating", @type = "number", data_theme = "krajee-fas", data_min = 0, data_max = 5, data_step = 1, data_size = "xs", @title = "" })
+            @Html.TextBox("Calificacion", null, new { @class = "rating", @type = "number", data_theme = "krajee-fas", data_min = 0, data_max = 5, data_step = 1, data_size = "xs", @title = "" })
             <label for="name-input">@HttpContextAccessor.HttpContext.Session.GetString("UsuarioNombre")</label>
             @Html.TextBox("UsuarioId", HttpContextAccessor.HttpContext.Session.GetString("UsuarioId"), new { type = "hidden" })
-            @Html.TextBox("EstablecimientoId", Model.estSalud.Id, new { type = "hidden" })
+            @Html.TextBox("EstablecimientoId", Model.establecimientoSalud.Id, new { type = "hidden" })
             @Html.TextArea("Comentario", null, new { @class = "form-control" })
             <br />
             <button type="submit" class="btn btn-login">Agregar Comentario</button>
@@ -87,7 +87,7 @@
     @foreach (var items in Model.listValoracion)
     {
         <div id="comentario">
-            @items.UsuarioId
+            @items.Usuario
             <div>
                 <input id="input-21e" value="@items.Calificacion" type="text" class="rating" data-theme="krajee-fas" data-min=0 data-max=5 data-step=1 data-size="xs" title="" disabled>
             </div>

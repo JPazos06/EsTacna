@@ -31,7 +31,7 @@ namespace EsTacna.Repositories
         private readonly EsTacnaContext _dbContext;
 
         /// <summary>
-        /// Constructor de la clase EpsEstablecimientodeSaludRepositoryImpl.
+        /// Constructor de la clase EpsEstablecimientoSaludRepositoryImpl.
         /// </summary>
         /// <param name="dbContext">Contexto de base de datos para acceder a las entidades.</param>
         public EpsEstablecimientoSaludRepositoryImpl(EsTacnaContext dbContext)
@@ -42,27 +42,27 @@ namespace EsTacna.Repositories
         /// <inheritdoc />
         public EpsEstablecimientoSalud BuscarId(int establecimientoId)
         {
-            EpsEstablecimientoSalud epsEstablecimiento = new EpsEstablecimientoSalud();
+            EpsEstablecimientoSalud objEpsEstablecimiento = new EpsEstablecimientoSalud();
             try
             {
                 var establecimientoDatos = from datos in _dbContext.EpsEstablecimientoSaluds select datos;
-                epsEstablecimiento = establecimientoDatos.Where(e => e.EstablecimientoId == establecimientoId).FirstOrDefault();
+                objEpsEstablecimiento = establecimientoDatos.Where(e => e.EstablecimientoId == establecimientoId).FirstOrDefault();
             }
             catch (Exception ex)
             {
                 // Manejo de excepciones
                 throw;
             }
-            return epsEstablecimiento;
+            return objEpsEstablecimiento;
         }
 
         /// <inheritdoc />
         public Ep BuscarIdEps(int establecimientoId)
         {
-            Ep eps = new Ep();
+            Ep objEps = new Ep();
             try
             {
-                eps = _dbContext.EpsEstablecimientoSaluds
+                objEps = _dbContext.EpsEstablecimientoSaluds
                         .Include(e => e.Eps)
                         .FirstOrDefault(e => e.EstablecimientoId == establecimientoId)?.Eps;
             }
@@ -71,7 +71,7 @@ namespace EsTacna.Repositories
                 // Manejo de excepciones
                 throw;
             }
-            return eps;
+            return objEps;
         }
     }
 }

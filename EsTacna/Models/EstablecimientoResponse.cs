@@ -7,10 +7,10 @@ namespace EsTacna.Models
     public class EstablecimientoResponse
     {
         public int establecimiento_id { get; set; }
-        public string clasfreal { get; set; }
+        public string clasificacionReal { get; set; }
         private readonly HttpClient httpClient;
         //
-        private readonly EstablecimientoSaludRepositoryImpl estrepo = new EstablecimientoSaludRepositoryImpl(new EsTacnaContext());
+        private readonly EstablecimientoSaludRepositoryImpl objEstablecimientoRepo = new EstablecimientoSaludRepositoryImpl(new EsTacnaContext());
         //
         public EstablecimientoResponse()
         {
@@ -23,7 +23,7 @@ namespace EsTacna.Models
 
             // Realizar la solicitud GET y obtener la respuesta
             HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
-            EstablecimientoResponse objEstResp = new EstablecimientoResponse();
+            EstablecimientoResponse objEstablecimientoResponse = new EstablecimientoResponse();
             // Verificar si la respuesta es exitosa (código de estado 200)
             if (response.IsSuccessStatusCode)
             {
@@ -35,7 +35,7 @@ namespace EsTacna.Models
 
                 // Utilizar los datos obtenidos
                 var establecimientoId = responseData.establecimiento_id;
-                var clasfreal = responseData.clasfreal;
+                var clasificacionReal = responseData.clasificacionReal;
 
                 // Resto del código para trabajar con los datos obtenidos
 
@@ -45,7 +45,7 @@ namespace EsTacna.Models
             {
                 // Manejar el caso de error en la respuesta
 
-                return objEstResp;
+                return objEstablecimientoResponse;
             }
         }
 
@@ -56,7 +56,7 @@ namespace EsTacna.Models
             string apiUrl = $"http://localhost:5000/api/recomendaciones";
             // Realizar la solicitud GET a la API
             HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
-            List<EstablecimientoSalud> ListEst = new List<EstablecimientoSalud>();
+            List<EstablecimientoSalud> ListEstablecimiento = new List<EstablecimientoSalud>();
             // Verificar si la solicitud fue exitosa
             if (response.IsSuccessStatusCode)
             {
@@ -72,22 +72,22 @@ namespace EsTacna.Models
                     foreach (var item in recomendacionesUsuario)
                     {
 
-                        var objEst = estrepo.BuscarId(Convert.ToInt32(item));
-                        ListEst.Add(objEst);
+                        var objEstablecimiento = objEstablecimientoRepo.BuscarId(Convert.ToInt32(item));
+                        ListEstablecimiento.Add(objEstablecimiento);
                     }
                     // Hacer algo con las recomendaciones del usuario, como pasarlas a la vista
-                    return ListEst;
+                    return ListEstablecimiento;
                 }
                 else
                 {
                     // Manejar el caso en que no se encuentren recomendaciones para el ID de usuario
-                    return ListEst;
+                    return ListEstablecimiento;
                 }
             }
             else
             {
                 // Manejar el caso de error en la solicitud a la API
-                return ListEst;
+                return ListEstablecimiento;
             }
         }
     }

@@ -135,3 +135,4 @@ C:\Users\JPazo\OneDrive\Documentos\GitHub\EsTacna\EsTacna\obj\Debug\net8.0\refin
 C:\Users\JPazo\OneDrive\Documentos\GitHub\EsTacna\EsTacna\obj\Debug\net8.0\EsTacna.pdb
 C:\Users\JPazo\OneDrive\Documentos\GitHub\EsTacna\EsTacna\obj\Debug\net8.0\EsTacna.genruntimeconfig.cache
 C:\Users\JPazo\OneDrive\Documentos\GitHub\EsTacna\EsTacna\obj\Debug\net8.0\ref\EsTacna.dll
+C:\Users\JPazo\OneDrive\Documentos\GitHub\EsTacna\EsTacna\bin\Debug\net8.0\Newtonsoft.Json.dll

@@ -41,17 +41,17 @@ namespace EsTacna.Repositories
         /// <inheritdoc />
         public Ep BuscarId(int epsId)
         {
-            Ep eps = new Ep();
+            Ep objEps = new Ep();
             try
             {
                 var epsDatos = from datos in _dbContext.Eps select datos;
-                eps = epsDatos.Where(e => e.Id == epsId).FirstOrDefault();
+                objEps = epsDatos.Where(e => e.Id == epsId).FirstOrDefault();
             }
             catch (Exception ex)
             {
                 throw;
             }
-            return eps;
+            return objEps;
         }
 
         /// <inheritdoc />

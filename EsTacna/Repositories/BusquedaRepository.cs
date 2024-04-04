@@ -11,8 +11,8 @@ namespace EsTacna.Repositories
         /// <summary>
         /// Registra una búsqueda en la base de datos.
         /// </summary>
-        /// <param name="busqueda">Objeto Busquedum que se registrará.</param>
-        void Registrar(Busquedum busqueda);
+        /// <param name="objBusqueda">Objeto Busquedum que se registrará.</param>
+        void Registrar(Busquedum objBusqueda);
 
         /// <summary>
         /// Lista todas las búsquedas almacenadas en la base de datos.
@@ -38,11 +38,11 @@ namespace EsTacna.Repositories
         }
 
         /// <inheritdoc />
-        public void Registrar(Busquedum busqueda)
+        public void Registrar(Busquedum objBusqueda)
         {
             try
             {
-                _dbContext.Entry(busqueda).State = EntityState.Added;
+                _dbContext.Entry(objBusqueda).State = EntityState.Added;
                 _dbContext.SaveChanges();
             }
             catch (Exception ex)

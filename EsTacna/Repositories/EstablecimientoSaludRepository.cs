@@ -33,8 +33,8 @@ namespace EsTacna.Repositories
             try
             {
                 var establecimientoDatos = from datos in _dbContext.EstablecimientoSaluds
-                                           join epsEst in _dbContext.EpsEstablecimientoSaluds on datos.Id equals epsEst.EstablecimientoId
-                                           where epsEst.EpsId == epsId &&
+                                           join epsEstablecimiento in _dbContext.EpsEstablecimientoSaluds on datos.Id equals epsEstablecimiento.EstablecimientoId
+                                           where epsEstablecimiento.EpsId == epsId &&
                                                  (datos.Nombre.ToLower().Contains(criterio.ToLower()) || datos.Descripcion.ToLower().Contains(criterio.ToLower()))
                                            select datos;
 
@@ -49,14 +49,14 @@ namespace EsTacna.Repositories
         }
 
         /// <inheritdoc />
-        public EstablecimientoSalud BuscarId(int estId)
+        public EstablecimientoSalud BuscarId(int establecimientoId)
         {
-            EstablecimientoSalud establecimientoDeSalud = new EstablecimientoSalud();
+            EstablecimientoSalud objEstablecimiento = new EstablecimientoSalud();
             try
             {
-                establecimientoDeSalud = _dbContext.EstablecimientoSaluds
+                objEstablecimiento = _dbContext.EstablecimientoSaluds
                     .Include(e => e.EpsEstablecimientoSaluds)
-                    .FirstOrDefault(e => e.Id == estId);
+                    .FirstOrDefault(e => e.Id == establecimientoId);
             }
             catch (Exception ex)
             {
@@ -64,7 +64,7 @@ namespace EsTacna.Repositories
                 throw;
             }
 
-            return establecimientoDeSalud;
+            return objEstablecimiento;
         }
 
         /// <inheritdoc />
@@ -74,8 +74,8 @@ namespace EsTacna.Repositories
             try
             {
                 var establecimientoDatos = from datos in _dbContext.EstablecimientoSaluds
-                                           join epsEst in _dbContext.EpsEstablecimientoSaluds on datos.Id equals epsEst.EstablecimientoId
-                                           where epsEst.EpsId == epsId
+                                           join epsEstablecimiento in _dbContext.EpsEstablecimientoSaluds on datos.Id equals epsEstablecimiento.EstablecimientoId
+                                           where epsEstablecimiento.EpsId == epsId
                                            select datos;
 
                 listEstablecimiento = establecimientoDatos.ToList();
