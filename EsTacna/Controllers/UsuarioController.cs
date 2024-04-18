@@ -22,15 +22,15 @@ namespace EsTacna.Controllers
         [HttpPost]
         public IActionResult Registrar(Usuario objUsuario)
         {
-            if (ModelState.IsValid)
+            try
             {
                 objUsuarioRepo.Registrar(objUsuario);
                 objUsuarioUnit.SaveChanges();
                 return View(objUsuario);
             }
-            else
+            catch (Exception ex)
             {
-                return View(objUsuario);
+                throw new Exception("Ocurrió un error al registrar el usuario.", ex);
             }
         }
         // GET: Usuario/Perfil?idUs=1

@@ -59,7 +59,7 @@ namespace EsTacna.Repositories
             }
             catch (Exception ex)
             {
-                throw;
+                throw new Exception("Ocurrió un error al registrar el usuario.", ex);
             }
         }
 
@@ -74,7 +74,7 @@ namespace EsTacna.Repositories
             }
             catch (Exception ex)
             {
-                throw;
+                throw new Exception("El usuario y/o la contraseña son incorrectos", ex);
             }
             return objUsuario;
         }

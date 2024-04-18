@@ -1,0 +1,32 @@
+﻿@model List<EsTacna.Models.EstablecimientoSalud>;
+@{
+    ViewData["Title"] = "Clinicas";
+}
+<div id="Resultados" class="container bg-light align-self-center">
+    <h1 class="align-self-center fw-bold text-center" style="color:#287D97">RESULTADOS</h1>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="@item.Imagen" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color:#287D97">@item.Nombre</h5>
+                        <hr />
+                        <p class="card-text" style="color:#287D97">@item.Descripcion</p>
+                        <hr />
+                        <p class="card-text" style="color:#287D97">@item.Direccion</p>
+                        @using (Html.BeginForm("Detalle", "EstablecimientoSalud", FormMethod.Post))
+                        {
+                            @Html.TextBox("EstablecimientoId", item.Id, new { @class = "form-control me-2 bg-light rounded-pill", aria_label = "Buscar", type = "hidden" })
+                            <div class="d-flex">
+                                <button type="submit" class="btn btn-login">Ver Detalles</button>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <br />
+        }
+    </div>
+</div>

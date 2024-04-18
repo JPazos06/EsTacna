@@ -89,6 +89,24 @@ namespace EsTacna.Repositories
         }
 
         /// <inheritdoc />
+        public List<EstablecimientoSalud> ListarClinicas()
+        {
+            List<EstablecimientoSalud> listEstablecimiento = new List<EstablecimientoSalud>();
+            try
+            {
+                var establecimientoDatos = from datos in _dbContext.EstablecimientoSaluds
+                                           select datos;
+                listEstablecimiento = establecimientoDatos.ToList();
+            }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones
+                throw;
+            }
+            return listEstablecimiento;
+        }
+
+        /// <inheritdoc />
         public List<EstablecimientoSalud> ListarMap()
         {
             List<EstablecimientoSalud> listEstablecimiento = new List<EstablecimientoSalud>();

@@ -56,5 +56,12 @@ namespace EsTacna.Controllers
             objValoracionRepo.Guardar(objValoracion);
             return RedirectToAction("Detalle", new { idEstablecimiento = objValoracion.EstablecimientoId }); ;
         }
+        public IActionResult Clinicas()
+        {
+            Busquedum objBuscar = new Busquedum();
+            var listEstablecimiento = new List<EstablecimientoSalud>();
+            listEstablecimiento = objEstablecimientoRepo.ListarClinicas().ToList();
+            return View(listEstablecimiento);
+        }
     }
 }

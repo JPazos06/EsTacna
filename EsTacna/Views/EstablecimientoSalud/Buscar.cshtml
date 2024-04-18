@@ -19,7 +19,7 @@
                         <p class="card-text" style="color:#287D97">@item.establecimientoSalud.Direccion</p>
                         @using (Html.BeginForm("Detalle", "EstablecimientoSalud", FormMethod.Post))
                         {
-                            @Html.TextBox("EstId", item.establecimientoSalud.Id, new { @class = "form-control me-2 bg-light rounded-pill", aria_label = "Buscar", type = "hidden" })
+                            @Html.TextBox("EstablecimientoId", item.establecimientoSalud.Id, new { @class = "form-control me-2 bg-light rounded-pill", aria_label = "Buscar", type = "hidden" })
                             <div class="d-flex">
                                 <button type="submit" class="btn btn-login">Ver Detalles</button>
                             </div>
